@@ -5706,7 +5706,7 @@ body[class*="page-product"] #content .owl-carousel {
   position: relative;background:#000;
 }
 #header-layout .inside {
-  padding: 25px 70px;
+  padding: 25px 0;
 }
 #powered,.footer-center ,.box-support,.box-module-pavreassurances, .widget-banner {
   padding: 0 70px;
@@ -5741,11 +5741,9 @@ body[class*="page-product"] #content .owl-carousel {
   display: block;
   position: absolute;
 }
-#header-layout ul.links {
-  padding-top: 5px;
-}
+
 #header-layout.header-v1 ul.links > li a {
-  color: #FFFFFF;
+  color: #000;
 }
 #header-layout.header-v2 #topbar {
   border-bottom-color: #e5e5e5;
@@ -5853,12 +5851,14 @@ body[class*="page-product"] #content .owl-carousel {
   right: auto;
 }
 #header-layout.header-v4 #topbar {
-  background-color: #eaeaea;
-  color:#1b1b1b;
-  min-height:38px;
+  background-color: #333;
+  color:#ffffff;
 }
 #header-layout.header-v4 ul.links li a {
   color: #FFFFFF;
+}
+.links.text-right span {
+  padding-left: 10px;
 }
 #header-layout.header-v4 #topbar .btn-group .btn-dropdown {
   background-color: rgba(255, 255, 255, 0.1);
@@ -9926,8 +9926,11 @@ padding: 20px 0 10px;
     display: none;
   }
 }
-/*$media (max-width: 991px) {*/
+/* Portrait tablets and small desktops */
 @media (max-width: 991px) {
+  .sm-text-center {
+    text-align: center;
+  }
   .mass-bottom::before, .line::before {
     content: none;
   }
@@ -9941,8 +9944,11 @@ padding: 20px 0 10px;
     clear: both;
   }
 }
-/*$media (max-width: 767px) {*/
+/* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  .sm-text-center {
+    text-align: center;
+  }
   .flashsale .text-heading {
     font-size: 12px;
     padding: 10px 0;
@@ -10025,7 +10031,14 @@ padding: 20px 0 10px;
     color: #ff3333;
   }
 }
+/* Portrait phones and smaller col-xs */
 @media (max-width: 480px) {
+  .links.text-right {
+    text-align: center;
+  }
+  .xs-text-center {
+    text-align: center;
+  }
   .product-list .product-col .block-img {
     float: none;
     width: 100%;

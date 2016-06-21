@@ -15,10 +15,21 @@
   <div class="container">
     <div class="topbar-wrap clearfix">
           <?php if( $content=$helper->getLangConfig('widget_support') ) {?>
-            <div class="box-support">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-left hidden-xs ">
               <?php echo $content; ?>
             </div>
           <?php } ?> 
+        <div class="login col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <ul class="links text-right">
+          <?php if ($logged) { ?>
+            <li>  <a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a><span>|</span></li>
+            <?php } else { ?>
+            <li>  <a href="<?php echo $register; ?>"><?php echo $text_register; ?></a><span>|</span></li>
+            <li>  <a href="<?php echo $login; ?>"><?php echo $text_login; ?></a><span>|</span></li>
+            <?php } ?>
+          <li><a class="" href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
+        </ul>
+      </div>
     </div>
    </div>
 </nav>
@@ -26,11 +37,7 @@
   <div class="container">
     <div class="inside">
       <div class="row">
-        
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 hidden-xs hidden-sm">
-          <?php echo $cart; ?>       
-        </div>        
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 xs-text-center sm-text-center">
           <!-- logo -->
           <?php if( $logoType=='logo-theme'){ ?>
           <div  id="logo-theme" class="logo-store"><a href="" class="img-responsive"><span><?php echo $name; ?></span></a></div>
@@ -53,6 +60,16 @@
             echo $search;
             }
             ?>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 xs-text-center sm-text-center">
+          <?php if( $contact=$helper->getLangConfig('widget_contact') ) {?>
+            <div class="box-contact">
+              <?php echo $contact; ?>
+            </div>
+          <?php } ?> 
+        </div>       
+        <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 hidden-xs hidden-sm">
+          <?php echo $cart; ?>       
         </div>
       </div>
     </div>

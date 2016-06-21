@@ -1844,3 +1844,11 @@
 2016-06-16 10:10:03 - PHP Warning:  Invalid argument supplied for foreach() in /home/cp469237/public_html/donghoseiko.com.vn/admin/controller/module/featured.php on line 193
 2016-06-16 10:10:33 - PHP Warning:  Invalid argument supplied for foreach() in /home/cp469237/public_html/donghoseiko.com.vn/admin/controller/module/featured.php on line 175
 2016-06-16 10:10:33 - PHP Warning:  Invalid argument supplied for foreach() in /home/cp469237/public_html/donghoseiko.com.vn/admin/controller/module/featured.php on line 193
+2016-06-21 0:23:05 - PHP Notice:  Undefined variable: text_welcome in /home/ubuntu/workspace/catalog/view/theme/lexus_golmart/template/common/header/version-4.tpl on line 26
+2016-06-21 0:37:22 - PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in /home/ubuntu/workspace/system/library/session.php on line 12
+2016-06-21 1:54:03 - PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in /home/ubuntu/workspace/system/library/session.php on line 12
+2016-06-21 1:54:04 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/index.php:98) in /home/ubuntu/workspace/index.php on line 170
+2016-06-21 1:54:04 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/index.php:98) in /home/ubuntu/workspace/system/library/currency.php on line 45
+2016-06-21 19:23:50 - PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in /home/ubuntu/workspace/system/library/session.php on line 12
+2016-06-21 19:23:50 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/index.php:98) in /home/ubuntu/workspace/index.php on line 170
+2016-06-21 19:23:50 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ubuntu/workspace/index.php:98) in /home/ubuntu/workspace/system/library/currency.php on line 45
