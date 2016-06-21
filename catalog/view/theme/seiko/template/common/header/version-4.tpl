@@ -52,7 +52,7 @@
           <?php } ?>
         </div>
         
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 hidden-xs">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 hidden-xs space-padding-20">
            <?php
             if (count($autosearch) && !empty($autosearch)) {
             echo $autosearch;
@@ -61,14 +61,17 @@
             }
             ?>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 xs-text-center sm-text-center">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 xs-text-center sm-text-center space-padding-20">
           <?php if( $contact=$helper->getLangConfig('widget_contact') ) {?>
             <div class="box-contact">
-              <?php echo $contact; ?>
+              <span class="icon-contact"></span>
+              <div class="content-contact">
+                <?php echo $contact; ?>
+              </div>
             </div>
           <?php } ?> 
         </div>       
-        <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 hidden-xs hidden-sm">
+        <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 hidden-xs hidden-sm space-padding-20">
           <?php echo $cart; ?>       
         </div>
       </div>

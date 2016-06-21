@@ -1,15 +1,9 @@
 <?php $objlang = $this->registry->get('language');  ?>
 <div id="cart" class="clearfix">
     <div data-toggle="dropdown" data-loading-text="<?php echo $text_loading; ?>" class="dropdown-toggle">      
-      <div class="cart-inner">
+      <div class="cart-inner icon-cart">
         <a href="">
-          <i class="fa fa-shopping-cart"></i>
-          <div class="wrap-cart">
-          <h6 class="text-cart"><?php echo $objlang->get("text_heading_title"); ?></h6>
-          <span id="cart-total" class="cart-total radius-x "><?php echo $text_items; ?></span>          
-          
-          </div>
-          
+          <span id="cart-total" class="cart-total radius-x "><?php echo $text_count_items; ?></span>          
         </a>
       </div>
     </div>
